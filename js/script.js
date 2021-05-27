@@ -8,19 +8,19 @@ var distanza =parseInt(prompt('Quanti km percorrerà?'));
 console.log(distanza)
 
 // età del passeggero
-var eta =parseInt(prompt('Quanti anni ha?'));
-console.log(eta)
+var anni =parseInt(prompt('Quanti anni ha?'));
+console.log(anni)
 
 // il prezzo del biglietto, 0.21 € al km
-var prezzoAlKm = distanza * 0.21;
+var prezzoAlKm = (distanza * 0.21).toFixed(2);
 console.log('costo fascia standard', prezzoAlKm)
 
 
 // variabilie eta <18
-if(eta < 18){
-    console.log('costo fascia minorenne', (prezzoAlKm - (prezzoAlKm / 100 * 20)));
-} else if(eta > 65) {
-    console.log('costo fascia anziano', (prezzoAlKm - (prezzoAlKm / 100 * 40)));
+if(anni < 18){
+    console.log('costo fascia minorenne', (prezzoAlKm - (prezzoAlKm / 100 * 20)).toFixed(2));
+} else if(anni > 65) {
+    console.log('costo fascia anziano', (prezzoAlKm - (prezzoAlKm / 100 * 40)).toFixed(2));
 }
 
 

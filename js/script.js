@@ -12,16 +12,15 @@ var eta =parseInt(prompt('Quanti anni ha?'));
 console.log(eta)
 
 // il prezzo del biglietto, 0.21 € al km
-var prezzoAlKm = distanza * 0.21
-console.log(prezzoAlKm)
-
-
+var prezzoAlKm = distanza * 0.21;
+console.log('costo fascia standard', prezzoAlKm)
 
 
 // variabilie eta <18
 if(eta < 18){
-   
+    console.log('costo fascia minorenne', (prezzoAlKm - (prezzoAlKm / 100 * 20)));
 } else if(eta > 65) {
-    
+    console.log('costo fascia anziano', (prezzoAlKm - (prezzoAlKm / 100 * 40)));
 }
+
 

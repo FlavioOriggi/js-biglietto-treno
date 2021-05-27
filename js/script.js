@@ -5,16 +5,15 @@
 
 // distanza
 var distanza =parseInt(prompt('Quanti km percorrerà?'));
-console.log(distanza)
+console.log(distanza);
 
 // età del passeggero
 var anni =parseInt(prompt('Quanti anni ha?'));
-console.log(anni)
+console.log(anni);
 
 // il prezzo del biglietto, 0.21 € al km
 var prezzoAlKm = (distanza * 0.21).toFixed(2);
-console.log('costo fascia standard', prezzoAlKm)
-
+console.log('costo fascia standard', prezzoAlKm);
 
 // variabilie eta <18 (https://qastack.it/programming/3163070/javascript-displaying-a-float-to-2-decimal-places)
 if(anni < 18){
